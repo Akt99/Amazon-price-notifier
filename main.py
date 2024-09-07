@@ -41,7 +41,7 @@ if response.status_code == 200:
                 connection.login(os.getenv("EMAIL_ADDRESS"), os.getenv("EMAIL_PASSWORD"))
                 connection.sendmail(
                         from_addr=os.getenv("EMAIL_ADDRESS"),
-                        to_addrs="arnabkumartripathy@gmail.com",
+                        to_addrs="targetmail@gmail.com",
                         msg=f"Subject: Amazon Price Alert !\n\n {message}\n{live_url}".encode("utf-8")
 
                     )
